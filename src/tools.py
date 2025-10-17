@@ -33,4 +33,3 @@ def get_last_tick_datetime(symbol_name : str | None = None, as_timestamp : bool 
 
     return dt.datetime.fromtimestamp(server_now_tamp)
 
-print(get_last_tick_datetime())

@@ -13,6 +13,9 @@ class LastErrorResult:
     def has_error(self) -> bool:
         return self.result_code != 1
 
+    def __str__(self):
+        return f"HasError: {self.has_error} Message: {self.message} ResultCode: {self.result_code}"
+
 @dataclass
 class Mt5Result(Generic[T]):
     has_error : bool
