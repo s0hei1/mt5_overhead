@@ -1,16 +1,11 @@
 import asyncio
-import logging
 from typing import Iterator
-
 import numpy as np
 from more_itertools import last
 from numpy._typing import NDArray
-from third_party.candlestic import Symbol, TimeFrame, Chart
-import datetime as dt
-from third_party.mt5_overhead.tools import get_last_tick_datetime
-from third_party.mt5_overhead.mt5_source import mt5_initialize_decor
+from py_candlestick import Symbol, TimeFrame, Chart
+from src.mt5_source import mt5_initialize_decor
 import MetaTrader5._core as mt5
-import pipe
 
 
 @mt5_initialize_decor

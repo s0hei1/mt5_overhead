@@ -2,12 +2,12 @@ import MetaTrader5 as mt5
 from typing import Callable, TypeVar, ParamSpec, Literal
 import datetime as dt
 from operator import itemgetter
-from third_party.candlestic.chart import Chart
-from third_party.candlestic.symbol import Symbol
-from third_party.candlestic.time_frame import TimeFrame
-from third_party.mt5_overhead.exception import MetaTraderIOException
-from third_party.mt5_overhead.mt5_result import LastErrorResult, Mt5Result, LastTickResult
-from third_party.mt5_overhead.ordertype import OrderType
+from py_candlestick import Chart
+from py_candlestick import Symbol
+from py_candlestick import TimeFrame
+from src.exception import MetaTraderIOException
+from src.mt5_result import LastErrorResult, Mt5Result, LastTickResult
+from src.ordertype import OrderType
 import warnings
 import logging
 

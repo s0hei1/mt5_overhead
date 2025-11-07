@@ -1,7 +1,5 @@
 from __future__ import annotations
-from enum import Enum
 from typing import ClassVar, Literal
-from enum import Enum
 import MetaTrader5 as mt5
 from dataclasses import dataclass
 from more_itertools import first

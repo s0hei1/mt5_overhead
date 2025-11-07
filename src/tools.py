@@ -1,8 +1,6 @@
 import MetaTrader5._core as mt5
 from toolz.curried import pipe, filter, map
 import datetime as dt
-from third_party.mt5_overhead.mt5_source import mt5_initialize_decor
-
 
 def get_last_tick_datetime(symbol_name : str | None = None, as_timestamp : bool = False) -> dt.datetime | int:
 
